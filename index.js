@@ -258,6 +258,7 @@ const ScrollableTabView = React.createClass({
     let tabBarProps = {
       goToPage: this.goToPage,
       tabs: this._children().map((child) => child.props.tabLabel),
+      tabsImage: this._children().map((child) => child.props.tabImage),
       activeTab: this.state.currentPage,
       scrollValue: this.state.scrollValue,
       containerWidth: this.state.containerWidth,

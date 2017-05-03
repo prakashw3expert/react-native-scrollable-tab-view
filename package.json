@@ -11,9 +11,30 @@
         "type": "range"
       },
       "/Users/prakashsaini/Sites/ptspotter/PTSpotter"
+    ],
+    [
+      {
+        "raw": "react-native-scrollable-tab-view@git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+        "scope": null,
+        "escapedName": "react-native-scrollable-tab-view",
+        "name": "react-native-scrollable-tab-view",
+        "rawSpec": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+        "spec": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:prakashw3expert/react-native-scrollable-tab-view.git",
+          "sshUrl": "git+ssh://git@github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+          "httpsUrl": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+          "gitUrl": "git://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+          "shortcut": "github:prakashw3expert/react-native-scrollable-tab-view",
+          "directUrl": "https://raw.githubusercontent.com/prakashw3expert/react-native-scrollable-tab-view/master/package.json"
+        }
+      },
+      "/Users/prakashsaini/Sites/eatsy/eatsy-diner-app-prakash"
     ]
   ],
-  "_from": "react-native-scrollable-tab-view@>=0.6.3 <0.7.0",
+  "_from": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
   "_id": "react-native-scrollable-tab-view@0.6.3",
   "_inCache": true,
   "_location": "/react-native-scrollable-tab-view",
@@ -29,23 +50,31 @@
   "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-native-scrollable-tab-view@^0.6.3",
+    "raw": "react-native-scrollable-tab-view@git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
     "scope": null,
     "escapedName": "react-native-scrollable-tab-view",
     "name": "react-native-scrollable-tab-view",
-    "rawSpec": "^0.6.3",
-    "spec": ">=0.6.3 <0.7.0",
-    "type": "range"
+    "rawSpec": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+    "spec": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:prakashw3expert/react-native-scrollable-tab-view.git",
+      "sshUrl": "git+ssh://git@github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+      "httpsUrl": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+      "gitUrl": "git://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+      "shortcut": "github:prakashw3expert/react-native-scrollable-tab-view",
+      "directUrl": "https://raw.githubusercontent.com/prakashw3expert/react-native-scrollable-tab-view/master/package.json"
+    }
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-scrollable-tab-view/-/react-native-scrollable-tab-view-0.6.3.tgz",
-  "_shasum": "32fdc31961bea42016aabca26ec57cc721386d62",
+  "_resolved": "git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git#8e7f6d47af57046f9c42a693b89c3594b7759ebf",
+  "_shasum": "33f2dbe6dae9efdbad3ac3d27b5a9100219ba021",
   "_shrinkwrap": null,
-  "_spec": "react-native-scrollable-tab-view@^0.6.3",
-  "_where": "/Users/prakashsaini/Sites/ptspotter/PTSpotter",
+  "_spec": "react-native-scrollable-tab-view@git+https://github.com/prakashw3expert/react-native-scrollable-tab-view.git",
+  "_where": "/Users/prakashsaini/Sites/eatsy/eatsy-diner-app-prakash",
   "author": {
     "name": "Brent Vatne"
   },
