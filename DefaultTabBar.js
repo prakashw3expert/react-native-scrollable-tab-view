@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react'
 const ReactNative = require('react-native');
 import PropTypes from 'prop-types';
 const {
@@ -9,19 +9,7 @@ const {
 } = ReactNative;
 const Button = require('./Button');
 
-const DefaultTabBar = React.createClass({
-  propTypes: {
-    goToPage: PropTypes.func,
-    activeTab: PropTypes.number,
-    tabs: PropTypes.array,
-    backgroundColor: PropTypes.string,
-    activeTextColor: PropTypes.string,
-    inactiveTextColor: PropTypes.string,
-    textStyle: Text.propTypes.style,
-    tabStyle: View.propTypes.style,
-    renderTab: PropTypes.func,
-    underlineStyle: View.propTypes.style,
-  },
+export default class DefaultTabBar extends React.Component {
 
   getDefaultProps() {
     return {
@@ -29,16 +17,15 @@ const DefaultTabBar = React.createClass({
       inactiveTextColor: 'black',
       backgroundColor: null,
     };
-  },
+  }
 
   renderTabOption(name, page) {
-  },
+  }
 
   renderTab(name, page, isTabActive, onPressHandler) {
     const { activeTextColor, inactiveTextColor, textStyle, tabStyle, style} = this.props;
     const textColor = isTabActive ? activeTextColor : inactiveTextColor;
     const fontWeight = isTabActive ? 'normal' : 'normal';
-console.log(this.props.tabStyle);
     return <Button
       style={{flex: 1, }}
       key={name}
@@ -53,7 +40,7 @@ console.log(this.props.tabStyle);
         </Text>
       </View>
     </Button>;
-  },
+  }
 
   render() {
     const containerWidth = this.props.containerWidth;
@@ -79,8 +66,8 @@ console.log(this.props.tabStyle);
         <Animated.View style={[tabUnderlineStyle, { left, }, this.props.underlineStyle, ]} />
       </View>
     );
-  },
-});
+  }
+};
 
 const styles = StyleSheet.create({
   tab: {
@@ -101,4 +88,16 @@ const styles = StyleSheet.create({
   },
 });
 
-module.exports = DefaultTabBar;
+DefaultTabBar.propTypes = {
+    goToPage: PropTypes.func,
+    activeTab: PropTypes.number,
+    tabs: PropTypes.array,
+    backgroundColor: PropTypes.string,
+    activeTextColor: PropTypes.string,
+    inactiveTextColor: PropTypes.string,
+    textStyle: Text.propTypes.style,
+    tabStyle: View.propTypes.style,
+    renderTab: PropTypes.func,
+    underlineStyle: View.propTypes.style
+}
+
